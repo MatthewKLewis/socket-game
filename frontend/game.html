@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghosts in the Socket</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon" />
+</head>
+<body>
+    <div id="flex">
+
+        <div id="login" class="visible centered">
+            <form id="login-form">
+                <label for="username">Username:</label><br>
+                <input required type="text" id="username" name="username"><br>
+                <label for="password">Password:</label><br>
+                <input required type="password" id="password" name="password"><br/>
+                <button type="submit">Log In</button>
+            </form>
+            <button id="register-button">Register</button>
+        </div>
+
+        <div id="register" class="hidden centered">
+            <form id="register-form">
+                <label for="username">Username:</label><br>
+                <input required type="text" id="username" name="username"><br>
+                <label for="password">Password:</label><br>
+                <input required type="password" id="password" name="password"><br/>
+                <label for="password">Repeat Password:</label><br>
+                <input required type="password" id="password" name="password"><br/>
+                <label for="username">Character Name:</label><br>
+                <input required type="text" id="username" name="username"><br>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+        <div id="screen" class="hidden centered">
+            <canvas id="canvas" width="1024" height="768"></canvas>
+        </div>
+
+        <p id="debug" class="hidden"></p>
+        
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.js"></script>
+    <script src="dist/main.js"></script>
+
+</body>
+</html>
+
+
+

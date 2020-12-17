@@ -1,0 +1,15 @@
+{
+  "name": "webpacked-game",
+  "version": "1.0.0",
+  "description": "Immediately after learning standard game architectures, I was always astounded at the sheer amount of operations that a computer could perform milisecond by milisecond. Can a browser game in JS really render a complex simulationist model 30 times a second? I developed this game to demonstrate \"narrow\" collision mechanics between every active 'entity' and passive 'tile', and to model some simple physics with momentum, friction, and gravity.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.10.0",
+    "webpack-cli": "^4.2.0"
+  }
+}
